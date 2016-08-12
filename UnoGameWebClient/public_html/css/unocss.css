@@ -1,0 +1,42 @@
+body{
+    background: #b2babb;
+
+}
+
+.container{
+    width:1001px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#content{
+    overflow: hidden;
+}
+
+h2{
+    font-family:monospace;
+    font-size:5em;
+    color: red;
+    text-shadow:3px 2px 3px white;         
+
+}
+
+#left{
+    float: left;
+    width: 300px;
+}
+
+#right{
+    float: left;
+    width: 701px;
+}
+
+#right img{
+    float: left;
+    margin-right: 15px;
+}
+
+ul{
+    list-style: none;
+    
+}

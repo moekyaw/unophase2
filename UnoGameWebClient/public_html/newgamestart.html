@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New Game</title>
+        <link href="css/unocss.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/unogetstartgameajax.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+          
+
+            <div id="content">
+                <h2 align="center">New Game</h2>
+                <form method="POST" action="http://localhost:8080/UnoGameWebServer/api/game/tablegamestart">
+                    <table >
+                        <tr>
+                            <td>
+                                Game ID: <span id="gameid"></span><br>
+                                <input type="hidden" name="startgameId" id="startgameId">
+                                Title:<span id="startgameName"></span><br>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" id="btn"> Start</button><br>
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>

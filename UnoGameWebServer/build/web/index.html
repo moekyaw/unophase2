@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <form method="POST" action="api/game/creategame">
+            <table>
+                <tr>
+                    <td>
+                        Title:<input type="text" name="title"/><br>
+                    </td>
+                </tr>
+            </table>
+        <button type="submit"> Create</button><br>
+        </form>
+        <form method="POST" action="api/game/createplayer">
+        <table>
+                <tr>
+                    <td>
+                        Game ID:<input type="text" name="gameId"/><br>
+                        Player Name:<input type="text" name="playerName"/>
+                    </td>
+                </tr>
+            </table>
+        <button type="submit"> Add</button>
+        
+        </form>
+      <form method="POST" action="api/game/start">
+        <table>
+                <tr>
+                    <td>
+                        Game ID:<input type="text" name="gameId"/><br>
+                        Player ID<input type="text" name="playerId"/>
+                    </td>
+                </tr>
+            </table>
+        <button type="submit"> Start</button>
+        
+        </form>
+</html>
